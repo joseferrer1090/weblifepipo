@@ -1,0 +1,28 @@
+%nav.navbar.navbar-default
+  .container
+    .navbar-header.logoo
+      %button#tog-btn.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "#home-section"}
+        %img.img-responsive{:src => "frontend/images/logo3.png", :style => "height: 50px;"}/
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right.hidden-xs.hidden-sm
+        %li.gold
+          %a{:href => "javascript:;"}
+            %button.btn.btn-gradient.outline-button{"data-target" => "#pop-register", "data-toggle" => "modal", :style => "margin-bottom: 0px;"}
+              %div{:style => "background: #1C589B;transition: all 0.3s;"} Registrate
+      %ul#navigation.nav.navbar-nav.navbar-right
+        %li
+          %a.active{:href => "#home-section"} Inicio
+        %li
+          %a{:href => "#about-section"} Nosotros
+        %li
+          %a{:href => "#offers-section"} Ofertas
+        %li
+          %a{:href => "#contact-section"} Contactenos
+      %ul.nav.navbar-nav.navbar-right.visible-xs.visible-sm
+        %li.gold{:style => "border-top: 1px solid rgba(255,255,255,0.1)"}
+          %a{"data-target" => "#pop-register", "data-toggle" => "modal", :href => "javascript:;"} Registrate

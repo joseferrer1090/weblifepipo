@@ -1,0 +1,146 @@
+.se-pre-con
+=render('partials/navigation')
+=render ('partials/header')
+=render ('partials/about')
+%section#why-us-section.sectionP60
+  .container
+    .row
+      .col-md-12
+        .col-md-5.col-md-offset-0.col-sm-10.col-sm-offset-1.col-xs-12
+          .responsive.rsb{"data-aos" => "fade-right", "data-aos-duration" => "1000"}
+            .heading-text
+              %span.blue-gradient-color Por que elegir Weblifepipo?
+            %p.light.oR 
+            %br/
+            %p.light.oR
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        .col-md-5.col-md-offset-1.col-sm-10.col-sm-offset-1.col-xs-12
+          .video-embed.pull-right{"data-aos" => "fade-left", "data-aos-duration" => "1000"}
+            .thumb
+              %span
+                %i.gold-gradient-color.fa.fa-youtube-play
+            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "300", :src => "https://www.youtube.com/embed/2LeOH9AGJQM?rel=0", :width => "533"}
+            / <iframe src="https://player.vimeo.com/video/202406936?title=0&amp;byline=0&amp;portrait=0&amp;color=FDA10E&amp;autoplay=0" width="100%" height="300" autoplay="0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></iframe>
+          .quote-div.gold-gradient-bg.pull-right{"data-aos" => "fade-up", "data-aos-duration" => "1000"}
+            %p.white.oR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+%section#how-section.sectionP60.grey-bg
+  .container
+    .row
+      .col-md-12.col-sm-12.col-xs-12
+        .col-md-6.col-md-offset-0.col-sm-10.col-xs-12
+          %div{"data-aos" => "fade-right", "data-aos-duration" => "1000"}
+            .heading-text
+              %span.blue-gradient-color How we work?
+            %p.light.rL{:style => "font-size: 16px;"}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              %br>/
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .col-md-12.col-sm-12.col-xs-12.p0.sectionP40
+          .col-md-3.col-sm-6.col-xs-12
+            .service2{"data-aos" => "zoom-in", "data-aos-duration" => "1000"}
+              .service2-icon
+                %i.gold-gradient-color.fa.fa-lightbulb-o
+              .service2-desc
+                %h4.blue.oB Think
+                %p.light.oR Lorem ipsum dolor sit amet, consectetur adipisicing elit, Aliquam amet beatae.
+                %a.gold{"data-target" => "#pop-read-more1", "data-toggle" => "modal", :href => "javascript:;"} Read more...
+          .col-md-3.col-sm-6.col-xs-12
+            .service2{"data-aos" => "zoom-in", "data-aos-duration" => "1000"}
+              .service2-icon
+                %i.gold-gradient-color.fa.fa-pencil
+              .service2-desc
+                %h4.blue.oB Create
+                %p.light.oR Lorem ipsum dolor sit amet, consectetur adipisicing elit, Aliquam amet beatae.
+                %a.gold{"data-target" => "#pop-read-more2", "data-toggle" => "modal", :href => "javascript:;"} Read more...
+          .col-md-3.col-sm-6.col-xs-12
+            .service2{"data-aos" => "zoom-in", "data-aos-duration" => "1000"}
+              .service2-icon
+                %i.gold-gradient-color.fa.fa-money
+              .service2-desc
+                %h4.blue.oB Sell
+                %p.light.oR Lorem ipsum dolor sit amet, consectetur adipisicing elit, Aliquam amet beatae.
+                %a.gold{"data-target" => "#pop-read-more3", "data-toggle" => "modal", :href => "javascript:;"} Read more...
+          .col-md-3.col-sm-6.col-xs-12
+            .service2{"data-aos" => "zoom-in", "data-aos-duration" => "1000"}
+              .service2-icon
+                %i.gold-gradient-color.fa.fa-bullhorn
+              .service2-desc
+                %h4.blue.oB Earn
+                %p.light.oR Lorem ipsum dolor sit amet, consectetur adipisicing elit, Aliquam amet beatae.
+                %a.gold{"data-target" => "#pop-read-more4", "data-toggle" => "modal", :href => "javascript:;"} Read more...
+=render('partials/number')
+%section#offers-section.hiw-bg
+  .sectionP60.grey-bg-o
+    .container
+      .row
+        .col-md-12.col-sm-12.col-xs-12
+          .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.col-xs-12.text-center
+            %div{"data-aos" => "fade-up", "data-aos-duration" => "1000"}
+              .heading-text
+                %span.gold-gradient-color What we can offer?
+              %p.light.oR{:style => "font-size: 16px;"} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          .col-md-12.col-md-offset-0.col-sm-10.col-sm-offset-1.col-xs-12.p0.sectionP40
+            .col-md-6.col-sm-12.col-xs-12
+              %div{"data-aos" => "fade-up", "data-aos-duration" => "1000"}
+                %img.img-responsive.centered{:src => "frontend/images/laptop.png"}/
+            .col-md-5.col-sm-12.col-xs-12.sectionP20.pull-right
+              .acordian.gradient-accordian{"data-aos" => "fade-up", "data-aos-duration" => "1000"}
+                .col-md-12.col-sm-12.col-xs-12
+                  .col-md-12.col-sm-12.col-xs-12.pull-right
+                    .acordian-desc.res-txt-center
+                      %i.fa.fa-heart-o
+                      %span.rM Easy to Use
+                  .col-md-12.col-sm-12.col-xs-12
+                    .acordian-body.res-txt-center
+                      %span.white.rL Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, Ut enim ad minim.
+              .acordian.active.gradient-accordian{"data-aos" => "fade-up", "data-aos-duration" => "1000"}
+                .col-md-12.col-sm-12.col-xs-12
+                  .col-md-12.col-sm-12.col-xs-12.pull-right
+                    .acordian-desc.res-txt-center
+                      %i.fa.fa-paint-brush
+                      %span.rM Ultimate Interface
+                  .col-md-12.col-sm-12.col-xs-12
+                    .acordian-body.res-txt-center
+                      %span.white.rL Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, Ut enim ad minim.
+              .acordian.gradient-accordian{"data-aos" => "fade-up", "data-aos-duration" => "1000"}
+                .col-md-12.col-sm-12.col-xs-12
+                  .col-md-12.col-sm-12.col-xs-12.pull-right
+                    .acordian-desc.res-txt-center
+                      %i.fa.fa-rocket
+                      %span.rM Carzy Fast
+                  .col-md-12.col-sm-12.col-xs-12
+                    .acordian-body.res-txt-center
+                      %span.white.rL Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, Ut enim ad minim.
+              .acordian.gradient-accordian{"data-aos" => "fade-up", "data-aos-duration" => "1000"}
+                .col-md-12.col-sm-12.col-xs-12
+                  .col-md-12.col-sm-12.col-xs-12.pull-right
+                    .acordian-desc.res-txt-center
+                      %i.fa.fa-pencil
+                      %span.rM Easy to Edit
+                  .col-md-12.col-sm-12.col-xs-12
+                    .acordian-body.res-txt-center
+                      %span.white.rL Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, Ut enim ad minim.
+=render('partials/pricingTable')
+%section
+  #map-section.seciton
+    #location.google-map{"data-lat" => "48.8580362", "data-lng" => "2.2933471", "data-zoom" => "17", :style => "height: 330px"}
+
+%section.gold-gradient-bg.sectionP40
+  .container
+    .row
+      .col-md-12.col-sm-12.col-xs-12
+        .col-md-6.col-sm-7.col-xs-12.res-txt-center
+          %h2.white.rL.m0{:style => "margin-top: 6px;"} Wanna buy PayYou theme?
+        .col-md-6.col-sm-5.col-xs-12.res-txt-center
+          %a{:href => "https://themeforest.net/item/payyou-one-page-beautiful-multipurpose-responsive-bootstrap-3-template/19934141"}
+            %button.btn.btn-white-outline.pull-right.res-float-none{:style => "margin: 0"} Buy Theme Now
+=render('partials/contact')
+%section.sectionP20{:style => "background: #0b101d;"}
+  .container
+    .row
+      .col-md-12.col-sm-12.col-xs-12
+        .col-md-12
+          %p.light.oR.m0{:style => "opacity: .65"} © Copyright 2017, all rights reserved.
+=render('partials/modalRegister')
+=render('partials/modalabout')  

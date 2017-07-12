@@ -1,0 +1,28 @@
+#pop-register.modal.fade{:role => "dialog"}
+  .modal-dialog
+    / Modal content
+    .modal-content
+      .modal-header
+        %button.close{"data-aos" => "zoom-in-up", "data-aos-duration" => "800", "data-dismiss" => "modal", :type => "button"} ×
+        %h3.modal-title.blue.oR.m0 REGISTER
+        %span.light.oR{:style => "font-size: 14px"} Enter your informations to register.
+      %form{:action => ""}
+        .modal-body
+          .input-box
+            %input{:placeholder => "Full Name", :required => "", :type => "text"}/
+            %span{:style => "position: absolute"}
+              %i.fa.fa-user
+          .input-box
+            %input{:placeholder => "Email Address", :required => "", :type => "email"}/
+            %span{:style => "position: absolute"}
+              %i.fa.fa-envelope-o
+          .input-box
+            %input{:placeholder => "Login Key", :required => "", :type => "text"}/
+            %span{:style => "position: absolute"}
+              %i.fa.fa-key
+          .input-box
+            %input{:placeholder => "Confirm Login Key", :required => "", :type => "text"}/
+            %span{:style => "position: absolute"}
+              %i.fa.fa-key
+        .modal-footer
+          %button.btn.btn-gradient{"data-dismiss" => "modal", :type => "button"} Register
