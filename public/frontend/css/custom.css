@@ -1182,8 +1182,9 @@ input:valid::-webkit-input-placeholder {
 }
 
 .package .price::after {
-    content: " / month per user";
-    font-weight: normal;
+    /*content: " / month per user";*/
+    font-weight: bold;
+    font-size: 20px !important;
 }
 
 .package .lineDiv {
