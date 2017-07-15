@@ -1,0 +1,23 @@
+%header.topbar
+  %nav.navbar.top-navbar.navbar-toggleable-sm.navbar-light
+    .navbar-header
+      %a.navbar-brand{:href => "index.html"}
+        %b
+          =image_tag('logo.png', class: 'img-responsive')
+    .navbar-collapse
+
+      %ul.navbar-nav.mr-auto.mt-md-0
+        %li.nav-item
+          %a.nav-link.nav-toggler.hidden-md-up.text-muted.waves-effect.waves-dark{:href => "javascript:void(0)"}
+            %i.ti-menu
+        %li.nav-item.hidden-sm-down
+          %form.app-search.p-l-20
+            %input.form-control{:placeholder => "Search for...", :type => "text"}/
+            %a.srh-btn
+              %i.ti-search
+
+      %ul.navbar-nav.my-lg-0
+        %li.nav-item.dropdown
+          %a.nav-link.dropdown-toggle.text-muted.waves-effect.waves-dark{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => ""}
+            Cerrar Sesíon
+            %i.fa.fa-sign-out

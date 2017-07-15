@@ -1,0 +1,50 @@
+!!!
+%html{:lang => "en"}
+  %head
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    %link{:href => "../assets/images/favicon.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}/
+    %title Monster Admin Template - The Most Complete &amp; Trusted Bootstrap 4 Admin Template
+    %link{:href => "/account/assets/plugins/bootstrap/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "/account/css/style.css", :rel => "stylesheet"}/
+
+    %link#theme{:href => "/account/css/colors/blue.css", :rel => "stylesheet"}/
+    %link#theme{:href => "/account/css/custom.css", :rel => "stylesheet"}/
+  %body.fix-header.fix-sidebar.card-no-border
+
+    .preloader
+      %svg.circular{:viewbox => "25 25 50 50"}
+        %circle.path{:cx => "50", :cy => "50", :fill => "none", :r => "20", "stroke-miterlimit" => "10", "stroke-width" => "2"}
+
+    #main-wrapper
+      =render('layouts/account/partials/header')
+      =render('layouts/account/partials/left_menu')
+      
+          
+      .page-wrapper
+        .container-fluid
+        
+          =yield
+
+
+    %script{:src => "/account/assets/plugins/jquery/jquery.min.js"}
+    %script{:src => "/account/assets/plugins/bootstrap/js/tether.min.js"}
+    %script{:src => "/account/assets/plugins/bootstrap/js/bootstrap.min.js"}
+    %script{:src => "/account/js/jquery.slimscroll.js"}
+    %script{:src => "/account/js/waves.js"}
+    %script{:src => "/account/js/sidebarmenu.js"}
+    %script{:src => "/account/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"}
+    %script{:src => "/account/js/custom.min.js"}
+    %script{:src => "/account/assets/plugins/flot/jquery.flot.js"}
+    %script{:src => "/account/assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"}
+    %script{:src => "/account/js/flot-data.js"}
+
+    %script{:src => "/account/assets/plugins/styleswitcher/jQuery.style.switcher.js"}

@@ -1,0 +1,18 @@
+%aside.left-sidebar
+  .scroll-sidebar
+    %nav.sidebar-nav
+      %ul#sidebarnav
+        %li
+          =link_to('<i class="fa fa-dashboard m-r-10"></i> Dashboard'.html_safe, account_users_path, class: 'waves-effect')
+        %li
+          =link_to('<i class="fa fa-plus-square-o m-r-10"></i> Realizar Deposito'.html_safe, 'deposito', class: 'waves-effect')
+        %li
+          =link_to('<i class="fa fa-archive m-r-10"></i> Depositos'.html_safe, 'depositos', class: 'waves-effect')
+        %li
+          =link_to('<i class="fa fa-paper-plane-o m-r-10"></i> Retirar Fondos'.html_safe, 'retirar', class: 'waves-effect')
+        %li
+          =link_to('<i class="fa fa-diamond m-r-10"></i> Ganancias'.html_safe, 'ganancias', class: 'waves-effect')
+        %li
+          =link_to('<i class="fa fa-users m-r-10"></i> Referidos'.html_safe, 'referidos', class: 'waves-effect')
+        %li
+          =link_to('<i class="fa fa-user m-r-10"></i> Mi Perfil'.html_safe, 'perfil', class: 'waves-effect')
